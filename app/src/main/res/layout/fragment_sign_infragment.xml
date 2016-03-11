@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="innoviz.ieee.niec.com.innoviz16.Frags.SignInfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:padding="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cheapGoogle"
+        android:layout_gravity="center_horizontal|top"></com.google.android.gms.common.SignInButton>
+
+</FrameLayout>

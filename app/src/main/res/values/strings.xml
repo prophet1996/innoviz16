@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">INNOVIZ\'16</string>
+    <string name="signed_in_fmt">Congrats you are now signed in : %s Press back to continue</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="facebook_app_id">564393703723168</string>
+    <string name="title_activity_nav_drawer">navDrawer</string>
+    <string-array name="planets_array">
+        <item>mercury</item>
+        <item>venus</item>
+        <item>earth</item>
+        <item>mars</item>
+        <item>jupiter</item>
+        <item>saturn</item>
+        <item>uranus</item>
+        <item>pluto</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_calender">CalenderActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
