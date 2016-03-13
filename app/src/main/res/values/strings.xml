@@ -7,21 +7,29 @@
     <string name="facebook_app_id">564393703723168</string>
     <string name="title_activity_nav_drawer">navDrawer</string>
     <string-array name="planets_array">
-        <item>mercury</item>
-        <item>venus</item>
-        <item>earth</item>
-        <item>mars</item>
-        <item>jupiter</item>
-        <item>saturn</item>
-        <item>uranus</item>
-        <item>pluto</item>
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>v</item>
+        <item>e</item>
+        <item>m</item>
+        <item>j</item>
+        <item>s</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>p</item>
     </string-array>
 
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_calender">CalenderActivity</string>
-    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

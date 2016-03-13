@@ -29,7 +29,7 @@ public class PostFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_events,container,false);
-        img=(ImageView)view.findViewById(R.id.img2);
+
         return view;
 
     }

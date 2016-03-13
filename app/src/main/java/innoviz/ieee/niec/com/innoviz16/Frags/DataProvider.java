@@ -9,6 +9,10 @@ public class DataProvider {
         this.setE_name(e_name);
         this.setImg_res(img_res);
     }
+    public DataProvider(int img_res){
+        this.setImg_res(img_res);
+
+    }
     private int img_res;
     private String e_name;
             private String e_desc;
