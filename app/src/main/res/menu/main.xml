@@ -2,8 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/face"
+       app:showAsAction="never"
         android:orderInCategory="100"
+        android:title="FACEBOOK"
+        android:icon="@drawable/splashimg"
+        />
+    <item
+        android:id="@+id/twit"
+        app:showAsAction="never"
+        android:orderInCategory="200"
+        android:title="TWITTER"
+        android:icon="@drawable/splashimg"
+        />
+    <item
+        android:id="@+id/insta"
+        app:showAsAction="never"
+        android:orderInCategory="300"
+        android:title="INSTAGRAM"
+        android:icon="@drawable/splashimg"
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="200"
         android:title="@string/action_settings"
         app:showAsAction="never" />
 </menu>

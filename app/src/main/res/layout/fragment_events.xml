@@ -5,14 +5,14 @@
     tools:context="in.swatcchindia.goclean.Screens.PostFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewpost"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Inset events here" />
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img2"/>
+        android:layout_height="wrap_content"
+        android:elevation="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+
 
 
 </FrameLayout>

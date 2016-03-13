@@ -1,9 +1,20 @@
 <resources>
 
     <style name="AppTheme" parent="AppTheme.Base">
-        <item name="android:colorPrimary">@color/colorPrimary</item>
-        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+    <style name="MyCustomToolbartheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorPrimary">#6cacd7</item>
+        <item name="android:colorPrimaryDark">#4082ae</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="colorPrimary">#6dacd7</item>
+        <item name="android:colorPrimaryDark">#4183ae</item>
+    </style>
+
 </resources>
 

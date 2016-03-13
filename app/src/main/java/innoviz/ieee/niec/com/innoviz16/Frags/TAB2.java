@@ -4,7 +4,9 @@ package innoviz.ieee.niec.com.innoviz16.Frags;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,12 +23,9 @@ public class TAB2 extends Fragment {
     String[] E_name, E_desc;
     ArrayList<DataProvider> arrayList;// = new ArrayList<DataProvider>();
 
-    int[] img_res = {R.drawable.innoviz10, R.drawable.innoviz11, R.drawable.innoviz12,
-            R.drawable.innoviz13, R.drawable.innoviz14, R.drawable.innoviz15,
-            R.drawable.innoviz16, R.drawable.innoviz18, R.drawable.innoviz19, R.drawable.innoviz20,
-            R.drawable.innoviz21, R.drawable.innoviz22, R.drawable.innoviz23, R.drawable.innoviz24,
-            R.drawable.innoviz25, R.drawable.innoviz26, R.drawable.innoviz27, R.drawable.innoviz28,
-            R.drawable.innoviz29};
+    int[] img_res = {R.drawable.innovizl1, R.drawable.innovizl2, R.drawable.innovizl3,
+            R.drawable.innovizl4, R.drawable.innovizl5, R.drawable.innoviz16,
+            R.drawable.innovizl7, R.drawable.innovizl8};
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
     RecyclerView.LayoutManager layoutManager;
@@ -43,10 +42,10 @@ public class TAB2 extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_tab2, container, false);
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView2);
-       layoutManager= new GridLayoutManager(getActivity(),2);
+       layoutManager= new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
 
-        E_name = getResources().getStringArray(R.array.planets_array);
-        E_desc = getResources().getStringArray(R.array.planets_array);
+        E_name = getResources().getStringArray(R.array.planets_array3);
+        E_desc = getResources().getStringArray(R.array.planets_array3);
         int i = 0;
         arrayList = new ArrayList<>();
         for (String name : E_name) {

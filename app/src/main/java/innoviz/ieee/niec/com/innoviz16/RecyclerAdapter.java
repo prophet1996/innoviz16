@@ -25,15 +25,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     @Override
     public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         /********************Change this if not working************************/
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.list_card_view,parent,false);
-        RecyclerViewHolder recyclerViewHolder= new RecyclerViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_card_view, parent, false);
+        RecyclerViewHolder recyclerViewHolder = new RecyclerViewHolder(view);
 
         return recyclerViewHolder;
     }
 
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
-        DataProvider dataProvider= arrayList.get(position);
+        DataProvider dataProvider = arrayList.get(position);
         holder.imageView.setImageResource(dataProvider.getImg_res());
         holder.e_name.setText(dataProvider.getE_name());
         holder.e_desc.setText(dataProvider.getE_desc());

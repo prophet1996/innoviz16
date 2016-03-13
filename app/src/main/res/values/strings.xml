@@ -7,7 +7,7 @@
     <string name="facebook_app_id">564393703723168</string>
     <string name="title_activity_nav_drawer">navDrawer</string>
     <string-array name="planets_array">
-        <item>m</item>
+
         <item>m</item>
         <item>m</item>
         <item>m</item>
@@ -25,7 +25,39 @@
         <item>u</item>
         <item>u</item>
         <item>u</item>
+        <item>u</item>
         <item>p</item>
+    </string-array>
+
+    <string-array name="planets_array2">
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>v</item>
+        <item>e</item>
+        <item>m</item>
+        <item>j</item>
+        <item>s</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+        <item>u</item>
+    </string-array>
+    <string-array name="planets_array3">
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>m</item>
+        <item>v</item>
+        <item>e</item>
+        <item>m</item>
+        <item>j</item>
+
+
     </string-array>
 
     <string name="action_settings">Settings</string>

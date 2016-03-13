@@ -140,11 +140,11 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Home";
+                    return "Events";
                 case 1:
-                    return "Past";
+                    return "Info";
                 case 2:
-                    return "TAB 2";
+                    return "Past";
                 case 3:
                     return "TAB 3";
 
@@ -159,11 +159,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        super.onOptionsItemSelected(item);
-        Intent i;
-        i = new Intent(MainActivity.this, Optionsgoogle.class);
-        startActivity(i);
-        return   super.onOptionsItemSelected(item);
+
+
+
+
+        return super.onOptionsItemSelected(item);
 
     }
 
