@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
                 case 2:
                     return "Past";
                 case 3:
-                    return "TAB 3";
+                    return "Reach Us";
 
             }
             return null;

@@ -28,7 +28,7 @@
              android:textSize="20dp"
              android:layout_margin="10dp"
              android:textColor="#000000"
-             android:text="Address:\n\nNorthern India Engineeing College ,FC-26,Shastri Park"
+             android:text="Address:\n\nNorthern India Engineeing College ,\nFC-26,Shastri Park\nDelhi-53\ninnoviz@niecdelhi.ac.in\nwww.innoviz.niecdelhi.ac.in"
              />
          <TextView
              android:layout_width="wrap_content"
@@ -43,7 +43,6 @@
     android:textColor="#000000"
     android:layout_height="wrap_content"
     android:textSize="20dp"
-    android:layout_margin="10dp"
     android:text="Mr Ankit Agarwal (9212711246)"
     />
          <TextView
@@ -51,14 +50,13 @@
              android:textColor="#000000"
              android:layout_height="wrap_content"
              android:textSize="20dp"
-             android:layout_margin="10dp"
+
              android:text="Mr Amrita Kaul (8860625677)"
              />
          <TextView
              android:layout_width="wrap_content"
              android:textColor="#000000"
              android:textSize="20dp"
-             android:layout_margin="10dp"
              android:layout_height="wrap_content"
              android:text="Mr Garima Gakhar (9910266390)"
              />
