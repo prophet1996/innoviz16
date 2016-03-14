@@ -25,12 +25,9 @@ public class HomeFragment extends Fragment {
     RecyclerView.LayoutManager layoutManager;
     RecyclerView.Adapter adapter;
     String[] E_name, E_desc;
-    int[] img_res = {R.drawable.innoviz10, R.drawable.innoviz11, R.drawable.innoviz12,
-            R.drawable.innoviz13, R.drawable.innoviz14, R.drawable.innoviz15,
-            R.drawable.innoviz16, R.drawable.innoviz18, R.drawable.innoviz19, R.drawable.innoviz20,
-            R.drawable.innoviz21, R.drawable.innoviz22, R.drawable.innoviz23, R.drawable.innoviz24,
-            R.drawable.innoviz25, R.drawable.innoviz26, R.drawable.innoviz27, R.drawable.innoviz28,
-            R.drawable.innoviz29};
+    int[] img_res = {R.drawable.innovizh11, R.drawable.innovizh2, R.drawable.innovizh3,
+            R.drawable.innovizh4, R.drawable.innovizh5, R.drawable.innovizh6,
+            R.drawable.innovizh7,R.drawable.innovizh1};
     ArrayList<DataProvider> arrayList;// = new ArrayList<DataProvider>();
 
 
@@ -56,7 +53,7 @@ public class HomeFragment extends Fragment {
             arrayList.add(dataProvider);
             i++;
         }
-        adapter = new RecyclerAdapter(arrayList);
+        adapter = new RecyclerAdapter(arrayList,this.getContext());
 
         // recyclerView.setHasFixedSize(true);
 

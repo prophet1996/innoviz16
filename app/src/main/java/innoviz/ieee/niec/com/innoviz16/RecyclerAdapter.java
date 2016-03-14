@@ -1,12 +1,20 @@
 package innoviz.ieee.niec.com.innoviz16;
 
+import android.app.Dialog;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import innoviz.ieee.niec.com.innoviz16.Frags.DataProvider;
@@ -16,8 +24,10 @@ import innoviz.ieee.niec.com.innoviz16.Frags.DataProvider;
  */
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder> {
 
-    public RecyclerAdapter(ArrayList<DataProvider> arrayList) {
+public Context context;
+    public RecyclerAdapter(ArrayList<DataProvider> arrayList,Context context) {
         this.arrayList = arrayList;
+        this.context=context;
     }
 
     private ArrayList<DataProvider> arrayList = new ArrayList<DataProvider>();
@@ -32,9 +42,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
-        DataProvider dataProvider = arrayList.get(position);
+    public void onBindViewHolder(RecyclerViewHolder holder, final int position) {
+        final DataProvider dataProvider = arrayList.get(position);
         holder.imageView.setImageResource(dataProvider.getImg_res());
+
+
+
+
+
+
+
+
+        final int a=dataProvider.getImg_res();
+                ImageView i;
         holder.e_name.setText(dataProvider.getE_name());
         holder.e_desc.setText(dataProvider.getE_desc());
 
@@ -49,6 +69,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     public static class RecyclerViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView e_name, e_desc;
+        public View v;
 
         public RecyclerViewHolder(View view) {
             super(view);
@@ -56,6 +77,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
             e_desc = (TextView) view.findViewById(R.id.textViewDesc);
             e_name = (TextView) view.findViewById(R.id.textViewName);
 
-        }
+
     }
-}
+
+}}

@@ -1,18 +1,11 @@
 package innoviz.ieee.niec.com.innoviz16;
 
 import android.content.Intent;
-import android.graphics.ColorFilter;
-import android.graphics.Typeface;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.text.format.Time;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class RealSplash extends AppCompatActivity {
 
@@ -26,8 +19,6 @@ public class RealSplash extends AppCompatActivity {
 
         setContentView(R.layout.activity_real_splash);
 
-        TextView t= (TextView)findViewById(R.id.textsplash);
-        final Typeface font=Typeface.createFromAsset(this.getAssets(),"fonts/fonta.otf");
 
 
 

@@ -11,22 +11,10 @@
         <item>m</item>
         <item>m</item>
         <item>m</item>
-        <item>m</item>
-        <item>m</item>
         <item>v</item>
         <item>e</item>
         <item>m</item>
-        <item>j</item>
-        <item>s</item>
-        <item>u</item>
-        <item>u</item>
-        <item>u</item>
-        <item>u</item>
-        <item>u</item>
-        <item>u</item>
-        <item>u</item>
-        <item>u</item>
-        <item>p</item>
+        <item>k</item>
     </string-array>
 
     <string-array name="planets_array2">
@@ -53,7 +41,7 @@
         <item>m</item>
         <item>m</item>
         <item>v</item>
-        <item>e</item>
+
         <item>m</item>
         <item>j</item>
 

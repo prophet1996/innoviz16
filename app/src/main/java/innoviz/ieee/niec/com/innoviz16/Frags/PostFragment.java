@@ -52,7 +52,7 @@ public class PostFragment extends Fragment {
             arrayList.add(dataProvider);
             i++;
         }
-        adapter = new RecyclerAdapter(arrayList);
+        adapter = new RecyclerAdapter(arrayList,this.getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 

@@ -1,6 +1,7 @@
 package innoviz.ieee.niec.com.innoviz16.Frags;
 
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -24,7 +25,7 @@ public class TAB2 extends Fragment {
     ArrayList<DataProvider> arrayList;// = new ArrayList<DataProvider>();
 
     int[] img_res = {R.drawable.innovizl1, R.drawable.innovizl2, R.drawable.innovizl3,
-            R.drawable.innovizl4, R.drawable.innovizl5, R.drawable.innoviz16,
+            R.drawable.innovizl4, R.drawable.innovizl5,
             R.drawable.innovizl7, R.drawable.innovizl8};
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
@@ -54,7 +55,8 @@ public class TAB2 extends Fragment {
             arrayList.add(dataProvider);
             i++;
         }
-        adapter = new RecyclerAdapter(arrayList);
+        adapter = new RecyclerAdapter(arrayList,this.getContext());
+
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 

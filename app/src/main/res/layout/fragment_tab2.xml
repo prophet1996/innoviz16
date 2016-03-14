@@ -4,12 +4,12 @@
     android:layout_height="match_parent"
     tools:context="innoviz.ieee.niec.com.innoviz16.Frags.TAB2">
 
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="15dp">
+        android:layout_height="match_parent"
+        android:elevation="15dp"
+        android:layout_gravity="center_horizontal|top">
 
     </android.support.v7.widget.RecyclerView>
 

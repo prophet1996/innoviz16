@@ -1,5 +1,6 @@
 package innoviz.ieee.niec.com.innoviz16;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.Switch;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -159,10 +162,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent b;
+        switch(item.getItemId()) {
+            case R.id.face:b=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/InnovizNIEC/?fref=ts"));
+                            startActivity(b);
+            case R.id.twit:b=new Intent(Intent.ACTION_VIEW,Uri.parse("https://twitter.com/innoviz_niec"));
+                startActivity(b);
+
+            case R.id.insta:b=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/innoviz.niec/"));
+                startActivity(b);
+            case R.id.action_settings:{Dialog d= new Dialog(this);
+            d.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+                d.setContentView(getLayoutInflater().inflate(R.layout.dialog,null));
+                d.show();
+            }
 
 
-
-
+        }
         return super.onOptionsItemSelected(item);
 
     }
@@ -174,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
+
 
 
 }
