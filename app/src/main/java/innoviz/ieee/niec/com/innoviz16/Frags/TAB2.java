@@ -1,13 +1,10 @@
 package innoviz.ieee.niec.com.innoviz16.Frags;
 
 
-import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +40,7 @@ public class TAB2 extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_tab2, container, false);
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView2);
-       layoutManager= new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
+        layoutManager = new LinearLayoutManager(getActivity());
 
         E_name = getResources().getStringArray(R.array.planets_array3);
         E_desc = getResources().getStringArray(R.array.planets_array3);
@@ -55,7 +52,7 @@ public class TAB2 extends Fragment {
             arrayList.add(dataProvider);
             i++;
         }
-        adapter = new RecyclerAdapter(arrayList,this.getContext());
+        adapter = new RecyclerAdapter(arrayList, this.getContext());
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);

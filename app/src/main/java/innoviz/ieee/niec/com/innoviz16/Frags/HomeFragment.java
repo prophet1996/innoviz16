@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,9 +24,9 @@ public class HomeFragment extends Fragment {
     RecyclerView.LayoutManager layoutManager;
     RecyclerView.Adapter adapter;
     String[] E_name, E_desc;
-    int[] img_res = {R.drawable.innovizh11, R.drawable.innovizh2, R.drawable.innovizh3,
-            R.drawable.innovizh4, R.drawable.innovizh5, R.drawable.innovizh6,
-            R.drawable.innovizh7,R.drawable.innovizh1};
+    int[] img_res = {R.drawable.innovizh11, R.drawable.innovizh2, R.drawable.innovizh4,R.drawable.innovizh7,R.drawable.innovizh1, R.drawable.innovizh3,
+            R.drawable.innovizh5, R.drawable.innovizh6,
+            };
     ArrayList<DataProvider> arrayList;// = new ArrayList<DataProvider>();
 
 
@@ -55,12 +54,10 @@ public class HomeFragment extends Fragment {
         }
         adapter = new RecyclerAdapter(arrayList,this.getContext());
 
-        // recyclerView.setHasFixedSize(true);
 
 
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-        // recyclerView.setElevation((float) 10.00);
         recyclerView.setAdapter(adapter);
 
 

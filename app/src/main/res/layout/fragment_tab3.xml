@@ -3,71 +3,128 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e0e1e3"
+
     tools:context="innoviz.ieee.niec.com.innoviz16.Frags.TAB3">
 
     <!-- TODO: Update blank fragment layout -->
 
-  <ScrollView
-      android:layout_width="wrap_content"
-      android:scrollbars="vertical"
-      android:layout_height="wrap_content">
-     <LinearLayout
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_margin="0dp"
-         android:orientation="vertical">
-         <ImageView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:src="@drawable/niecblur"
-          android:id="@+id/nb"
-          />
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:textSize="20dp"
-             android:layout_margin="10dp"
-             android:textColor="#000000"
-             android:text="Address:\n\nNorthern India Engineeing College ,\nFC-26,Shastri Park\nDelhi-53\ninnoviz@niecdelhi.ac.in\nwww.innoviz.niecdelhi.ac.in"
-             />
-         <TextView
-             android:layout_width="wrap_content"
-             android:textColor="#000000"
-             android:layout_height="wrap_content"
-             android:textSize="20dp"
-             android:layout_margin="10dp"
-             android:text="COORDINATORS:"
-             />
-<TextView
-    android:layout_width="wrap_content"
-    android:textColor="#000000"
-    android:layout_height="wrap_content"
-    android:textSize="20dp"
-    android:text="Mr Ankit Agarwal (9212711246)"
-    />
-         <TextView
-             android:layout_width="wrap_content"
-             android:textColor="#000000"
-             android:layout_height="wrap_content"
-             android:textSize="20dp"
+    <ScrollView
+        android:layout_margin="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
 
-             android:text="Mr Amrita Kaul (8860625677)"
-             />
-         <TextView
-             android:layout_width="wrap_content"
-             android:textColor="#000000"
-             android:textSize="20dp"
-             android:layout_height="wrap_content"
-             android:text="Mr Garima Gakhar (9910266390)"
-             />
-      <ImageView
-          android:layout_width="match_parent"
-          android:padding="0dp"
-          android:layout_height="wrap_content"
-          android:src="@drawable/finalt3"
-         />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="10dp"
+            android:orientation="vertical">
 
-     </LinearLayout>
+            <ImageView
+                android:id="@+id/nb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/niecblur" />
 
-  </ScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Address:\n\nNorthern India Engineeing College ,\nFC-26,Shastri Park\nDelhi-53\ninnoviz@niecdelhi.ac.in\nwww.innoviz.niecdelhi.ac.in"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="COORDINATORS:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mr Ankit Agarwal (9212711246)"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mr Amrita Kaul (8860625677)"
+                android:textColor="#000000"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mr Garima Gakhar (9910266390)"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="0dp"
+                android:src="@drawable/finalt3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/face"
+                    android:layout_width="65dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fb"
+                    android:onClick="face"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/twit"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tw"
+                    android:onClick="twit"
+
+                    android:layout_marginLeft="15dp"
+
+
+
+                    />
+
+                <Button
+                    android:id="@+id/insta"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/in"
+                    android:layout_marginLeft="15dp"
+                    android:onClick="insta"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/info"
+                    android:layout_width="100dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:onClick="info"
+                    android:layout_marginLeft="15dp"
+                   android:background="@drawable/abt"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 </FrameLayout>
